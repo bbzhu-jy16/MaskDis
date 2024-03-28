@@ -1,6 +1,6 @@
 # High-quality and Diverse Few-shot Image Generation via Masked Discrimination
 
-### Requirements
+## Requirements
 - Linux
 - NVIDIA GPU (NVIDIA TITAN RTX in our experiments) + CUDA CuDNN 11.2
 - PyTorch 1.7.0
@@ -9,19 +9,15 @@
 - Install all the required libraries:
          `pip install -r requirements.txt` 
 
-### Training and Evaluation
+## Training and Evaluation
 
-#### Prepare datasets
+### Prepare datasets
 
 ##### Transfer target images to lmdb format for GAN adaptation.
 
 `CUDA_VISIBLE_DEVICES='0' python prepare_data.py --out path/to/datasets --size 256 path/to/original/images`
 
-##### Prepare folders for Intra-LPIPS evaluation (following CDC's work)
-
-#### We provide a folder structure example of Amedeo's paintings in our code for Intra-LPIPS evaluation. 
-
-#### Train the adapted model and evaluate Intra-LPIPS 
+### Train the adapted model and evaluate Intra-LPIPS 
 
 1.Checkpoints and samples are saved in checkpoints/exp_name and samples/exp_name automatically.
 
@@ -47,7 +43,7 @@ We follow prior works to use pytorch-fid for FID evaluation (carried out for abu
 
 `CUDA_VISIBLE_DEVICES='0' python -m pytorch_fid /path/to/real/images /path/to/fake/images`
 
-#### Citation
+## Citation
 
 
 
