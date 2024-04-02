@@ -1,4 +1,5 @@
 # High-quality and Diverse Few-shot Image Generation via Masked Discrimination
+Official Implementation of our paper accepted by TIP 2024.
 
 ## Requirements
 - Linux
@@ -44,8 +45,15 @@ We follow prior works to use pytorch-fid for FID evaluation (carried out for abu
 `CUDA_VISIBLE_DEVICES='0' python -m pytorch_fid /path/to/real/images /path/to/fake/images`
 
 ## Citation
-
-
+If you are doing research related to our work, please consider to cite it!
+```
+@article{zhu2022few,
+  title={Few-shot image generation via masked discrimination},
+  author={Zhu, Jingyuan and Ma, Huimin and Chen, Jiansheng and Yuan, Jian},
+  journal={arXiv preprint arXiv:2210.15194},
+  year={2022}
+}
+```
 
 
 
