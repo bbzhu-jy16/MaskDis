@@ -787,16 +787,6 @@ class Patch_Discriminator(nn.Module):
 
         out = self.final_conv(out) # (4,512,4,4)
         out = out.view(batch, -1)
-        
-        '''index = np.ones((8192,1))
-        index[0:2048] = np.zeros((2048,1))
-        #for k in range(6144):   # 6144
-        #    index[k]=1
-        np.random.shuffle(index)
-        out_part = out.clone()
-        for k in range(8192):
-            if index[k]:
-                out_part[:,index]=0'''
 
         # random masks 
         index = np.random.choice(8192,6192,replace=False) #3/4 features masked
