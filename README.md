@@ -1,6 +1,8 @@
 # High-quality and Diverse Few-shot Image Generation via Masked Discrimination
 Official Implementation of our paper accepted by TIP 2024.
 
+Early Access: `https://ieeexplore.ieee.org/document/10496521`
+
 ## Requirements
 - Linux
 - NVIDIA GPU (NVIDIA TITAN RTX in our experiments) + CUDA CuDNN 11.2
