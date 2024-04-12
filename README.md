@@ -47,12 +47,12 @@ We follow prior works to use pytorch-fid for FID evaluation (carried out for abu
 ## Citation
 If you are doing research related to our work, please consider to cite it!
 ```
-@article{zhu2022few,
-  title={Few-shot image generation via masked discrimination},
+@ARTICLE{zhu2024few,
   author={Zhu, Jingyuan and Ma, Huimin and Chen, Jiansheng and Yuan, Jian},
-  journal={arXiv preprint arXiv:2210.15194},
-  year={2022}
-}
+  journal={IEEE Transactions on Image Processing}, 
+  title={High-quality and Diverse Few-shot Image Generation via Masked Discrimination}, 
+  year={2024},
+  doi={10.1109/TIP.2024.3385295}}
 ```
 
 
